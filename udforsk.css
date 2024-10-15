@@ -1,0 +1,97 @@
+/* Global Styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #333;
+    color: #000; /* Changed to shorthand */
+}
+
+/* Container Styles */
+.container {
+    display: contents; /* Consider replacing with a more semantic layout if necessary */
+    margin: 1.5em auto;
+}
+
+/* Header Styles */
+header {
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.page-title {
+    background-color: #ffffff;
+    padding: 10px 20px;
+}
+
+/* Logo Styles */
+.logo {
+    display: flex;
+    justify-content: flex-end; 
+    margin: 2rem; 
+    transition: transform 0.3s ease;
+}
+
+.logo img {
+    height: 200px; 
+    width: auto; 
+    border-radius: 50%; 
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+/* Content Styles */
+.content {
+    display: flex;
+    gap: 20px; /* Maintained gap between elements */
+}
+
+/* List Styles */
+.liste {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 200px; /* Fixed width for the list */
+}
+
+.liste h2 {
+    margin-top: 0;
+}
+
+.liste ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.liste li {
+    cursor: pointer;
+    padding: 5px 0;
+}
+
+.liste li:hover {
+    text-decoration: underline; /* Maintained hover effect */
+}
+
+/* Genre Content Styles */
+.genre-content {
+    background-color: #ffffff;
+    padding: 20px;
+    flex-grow: 1; /* Allows genre content to take up remaining space */
+    position: relative;
+}
+
+.genre-content h2 {
+    margin-top: 0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: transparent;
+    color: white;
+    text-align: left; /* Changed to left for semantic correctness */
+    padding: 100px; /* This may need adjustment depending on layout */
+}

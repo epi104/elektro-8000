@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udforsk</title>
+    <link rel="stylesheet" href="udforsk.css">
+</head>
+<body>
+    <div class="container">
+        <header id="udforsk">
+            <div class="page-title">Gå på opdagelse</div>
+        </header>
+
+        <div class="content">
+            <div class="liste">
+                <h2>Liste</h2>
+                <ul id="genre-list">
+                    <li data-genre="jungle">Jungle</li>
+                    <li data-genre="drumnbass">Drum'n'Bass</li>
+                    <li data-genre="garage">Garage</li>
+                    <li data-genre="house">House</li>
+                    <li data-genre="dubstep">Dubstep</li>
+                    <li data-genre="techno">Techno</li>
+                    <li data-genre="ambient">Ambient</li>
+                </ul>
+            </div>
+            <div class="genre-content" id="genre-content">
+                <h2 id="genre-title">Jungle</h2>
+                <p id="genre-description">
+                    Jungle er en hurtig og energisk genre, der opstod i Storbritannien i begyndelsen af 1990'erne. Den er kendetegnet ved sine komplekse trommemønstre, hurtige breakbeats (typisk omkring 160-180 BPM) og tunge basslines. Genren trækker ofte på samples fra reggae, dancehall og dub, hvilket giver den en rå og intens lyd. Jungle blev født ud af den britiske rave-scene og banede vejen for drum and bass. Kunstnere som Goldie, LTJ Bukem og Roni Size er nogle af de mest fremtrædende inden for genren, der er kendt for sin kaotiske, men fængslende energi.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <a class="logo" href="index.html">
+        <img src="img/elektro8000.png" alt="logo" height="200">
+    </a>
+
+    <footer>
+        <p>&copy; elektro8000. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const genreContent = {
+            jungle: {
+                title: "Jungle",
+                description: "Jungle er en hurtig og energisk genre, der opstod i Storbritannien i begyndelsen af 1990'erne. Den er kendetegnet ved sine komplekse trommemønstre, hurtige breakbeats (typisk omkring 160-180 BPM) og tunge basslines. Genren trækker ofte på samples fra reggae, dancehall og dub, hvilket giver den en rå og intens lyd. Jungle blev født ud af den britiske rave-scene og banede vejen for drum and bass. Kunstnere som Goldie, LTJ Bukem og Roni Size er nogle af de mest fremtrædende inden for genren, der er kendt for sin kaotiske, men fængslende energi."
+            },
+            drumnbass: {
+                title: "Drum'n'Bass",
+                description: "Drum and bass (D&B) udviklede sig fra jungle i midten af 1990'erne og byder på en mere raffineret og poleret version af breakbeat-rytmer. Med en hastighed på mellem 165-180 BPM har D&B fokus på tunge, rullende basslines og ofte atmosfæriske lydbilleder. Selvom den deler junglens komplekse trommespil, er lyden mere ren og ofte mere teknisk præcis. Subgenrer som liquid D&B, neurofunk og jump-up udforsker forskellige stemninger fra det melodiske til det dystre. Kunstnere som Andy C, Noisia og Pendulum har formet den moderne D&B-scene, som stadig trives i klubber verden over."
+            },
+            garage: {
+                title: "Garage",
+                description: "UK garage, eller bare garage, opstod i midten af 1990'erne i Storbritannien og kombinerer elementer fra house, jungle og R&B. Musikken ligger typisk på 130-140 BPM og er kendetegnet ved sine synkoperede rytmer, shuffled hi-hats og en karakteristisk '2-step'-beat, hvor bas og lilletromme ikke følger det sædvanlige mønster. Garagemusik har ofte vokaler, der er både sjælfulde og pitch-shiftede, hvilket giver genren et glat og opløftende udtryk. UK garage har affødt subgenrer som speed garage og grime. Fremtrædende kunstnere som DJ EZ, Craig David og Artful Dodger var med til at bringe garage ud i mainstreamen."
+            },
+            house: {
+                title: "House",
+                description: "Housemusik opstod i Chicago i begyndelsen af 1980'erne som en videreudvikling af disco-genren. House er kendetegnet ved sin stabile 4/4-takt, gentagende basslines og hyppig brug af synthesizere og trommemaskiner som Roland TR-808. Genren har udviklet sig til flere subgenrer som deep house, tech house og acid house, hver med sin egen unikke lyd. Houses inkluderende og frigørende stemning har gjort den til en grundpille i den globale klubkultur. Kunstnere som Frankie Knuckles, Larry Heard og Carl Cox er centrale skikkelser i housemusikkens historie og har skabt en lyd, der stadig dominerer på dansegulvene."
+            },
+            dubstep: {
+                title: "Dubstep",
+                description: "Dubstep opstod i starten af 2000'erne i det sydlige London, som en videreudvikling af garage og dub. Med tunge baslinjer, langsomme tempi (typisk omkring 140 BPM) og synkoperede trommer er genren kendt for sin mørke og grublende atmosfære. Den karakteristiske 'wub-wub'-lyd, hvor baslinjen vibrerer og ændrer sig, blev hurtigt dubsteps kendetegn. Pionerer som Skream, Benga og Digital Mystikz var med til at forme den underjordiske dubstep-scene, før kunstnere som Skrillex og Rusko bragte genren til verdens opmærksomhed. Dubstep har siden påvirket både pop og EDM, selvom dens rødder stadig findes i undergrunden."
+            },
+            techno: {
+                title: "Techno",
+                description: "Techno er en elektronisk musikgenre, der opstod i Detroit, USA, i midten af 1980'erne. Den er kendetegnet ved en mekanisk og futuristisk lyd med en konstant 4/4-takt, gentagne beats og tung brug af synthesizere og drum machines som Roland TR-909. Techno har ofte et minimalt, industrielt udtryk og lægger vægt på elektroniske teksturer frem for melodier. Genren har udviklet sig til mange subgenrer, som f.eks. minimal techno, acid techno og dub techno. Pionerer som Juan Atkins, Derrick May og Jeff Mills formede tidlig techno, mens den i dag fortsat er populær i undergrundsklubber verden over, især i byer som Berlin og Detroit."
+            },
+            ambient: {
+                title: "Ambient",
+                description: "Ambientmusik er en genre, der fokuserer på stemning og atmosfære frem for traditionelle musikstrukturer. Genren opstod i 1970'erne med kunstnere som Brian Eno og er ofte langsom, meditativ og uden tydelige rytmiske elementer. Synthesizerflader, feltoptagelser og elektroniske teksturer bruges ofte til at skabe dybe, immersive lydlandskaber. Ambientmusik er designet til at være 'lige så ignorerbar som interessant', hvilket gør den velegnet til både baggrundsmusik og fordybelse. Moderne kunstnere som Aphex Twin og Boards of Canada har videreudviklet genren ved at blande ambient med elektroniske og eksperimenterende musikformer."
+            }
+        };
+
+        document.getElementById('genre-list').addEventListener('click', function(e) {
+            if (e.target && e.target.nodeName === "LI") {
+                const genre = e.target.getAttribute('data-genre');
+                const content = genreContent[genre];
+                document.getElementById('genre-title').textContent = content.title;
+                document.getElementById('genre-description').textContent = content.description;
+            }
+        });
+    </script>
+</body>
+</html>

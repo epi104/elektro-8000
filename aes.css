@@ -1,0 +1,71 @@
+
+body, html {
+    background-image: url(img/aes.png);
+    background-size: 1700px;
+    font-size: 100%;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.intro{
+    font-size: x-large;
+}
+
+#artkl1 .container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+img {
+    height: 600px;
+    border-radius: 10px;
+    padding: 200px;
+}
+
+.img {
+    padding: 10px;
+    margin: 10px;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-end;
+    margin: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.logo img {
+    height: 200px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.eje {
+    width: 200px;
+}
+
+#artkl2 .container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#artkl3 .container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#aes .container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: transparent;
+    color: white;
+    padding: 75px;
+}

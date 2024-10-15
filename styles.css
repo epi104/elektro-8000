@@ -1,0 +1,149 @@
+/* Global Styles */
+body, html {
+    background-image: url(img/aes.png);
+    background-size: cover; /* Changed to cover for better responsiveness */
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero h1 {
+    margin: 0;
+    color: #cacaca;
+    font-size: 200px;
+    font-style: oblique;
+}
+
+.hero p {
+    color: #ffffff;
+}
+
+/* Main Content */
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Simplified grid definition */
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 1 / 1;
+}
+
+/* Box Styles */
+.box {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+/* Box Background Colors and Grid Placement */
+.super-natural-yellow {
+    background-color: #e5ff00;
+    grid-area: 1 / 1 / 2 / 2; /* Simplified grid area definition */
+}
+
+.stone {
+    background-color: #e0d8c5;
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.dark-forest {
+    background-color: #1a2421;
+    color: white;
+    grid-area: 2 / 1 / 4 / 2;
+}
+
+.mist {
+    background-color: #ffffff;
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.sky {
+    background-color: #b5c7c9;
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.two {
+    background-color: tomato;
+    grid-area: 4 / 1 / 5 / 3;
+}
+
+/* Footer Styles */
+footer {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    text-align: left; /* Changed from bottom-left for better semantic alignment */
+    padding: 100px;
+}
+
+/* Color Page Styles */
+.color-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.color-page header {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.color-page h1 {
+    margin: 0;
+    color: inherit;
+}
+
+/* Back Link Styles */
+.back-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: inherit;
+    text-decoration: none;
+    border: 1px solid currentColor;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Color Info Styles */
+.color-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .box {
+        font-size: 18px; /* Increased font size on larger screens */
+    }
+}
